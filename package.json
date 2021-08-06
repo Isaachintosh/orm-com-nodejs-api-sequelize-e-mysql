@@ -4,7 +4,7 @@
   "description": "Este projeto tem como finalidade aprofundar o conhecimento sobre gerenciamento de conteudos usando o padrão MVC através do Sequelize aplicado a uma API REST em NodeJS",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon api/index.js"
   },
   "repository": "https://github.com/Isaachintosh/orm-com-nodejs-api-sequelize-e-mysql.git",
   "author": "Isaac Mello aka @isaachintosh",
