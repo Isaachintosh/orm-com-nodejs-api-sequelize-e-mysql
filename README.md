@@ -8,7 +8,8 @@
     <li>Execute a instalação das dependências do projeto: usando "yarn install" ou "npm install"</li>
     <li>Use o comando "yarn dev" ou "npm run dev" para inicializar a API</li>
     <li>Execute o script de criação do banco de dados pelo comando ...</li>
-    <li>Execute o script para criar as migrations pelo comando ...</li>
+    <li>Execute o script para criar as migrations pelo comando "yarn db:migrate"</li>
+    <li>Para criar o seeder da tabela pessoas, use o comando "yarn seed-gen-pessoa"</li>
 </ol>
 
 ## Sobre o projeto

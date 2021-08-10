@@ -4,7 +4,12 @@
   "description": "Este projeto tem como finalidade aprofundar o conhecimento sobre gerenciamento de conteudos usando o padrão MVC através do Sequelize aplicado a uma API REST em NodeJS",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon api/index.js"
+    "dev": "nodemon api/index.js",
+    "db:migrate": "npx sequelize-cli db:migrate",
+    "db:migrate:undo": "npx sequelize-cli db:migrate:undo",
+    "seed-gen-pessoa": "npx sequelize-cli seed:generate --name demo-pessoa",
+    "seed:populate": "npx sequelize-cli db:seed:all",
+    "seed:undo": "npx sequelize-cli db:seed:undo"
   },
   "repository": "https://github.com/Isaachintosh/orm-com-nodejs-api-sequelize-e-mysql.git",
   "author": "Isaac Mello aka @isaachintosh",
@@ -13,7 +18,9 @@
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "mysql2": "^2.3.0",
-    "sequelize": "^6.6.5"
+    "path": "^0.12.7",
+    "sequelize": "^6.6.5",
+    "sequelize-cli": "^6.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
