@@ -28,6 +28,20 @@ module.exports = {
         docente_id: 6,
         createdAt: new Date(),
         updatedAt: new Date()
+      },
+      {
+        data_inicio: "2020-07-01",
+        nivel_id: 2,
+        docente_id: 1,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        data_inicio: "2020-07-01",
+        nivel_id: 1,
+        docente_id: 3,
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
     ], {})
   },
