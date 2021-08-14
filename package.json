@@ -8,7 +8,7 @@
     "model:create": "npx sequelize-cli model:create",
     "db:migrate": "npx sequelize-cli db:migrate",
     "db:migrate:undo": "npx sequelize-cli db:migrate:undo",
-    "seed-gen-pessoa": "npx sequelize-cli seed:generate --name demo-pessoa",
+    "seed:generator": "npx sequelize-cli seed:generate",
     "seed:populate": "npx sequelize-cli db:seed:all",
     "seed:undo": "npx sequelize-cli db:seed:undo"
   },
