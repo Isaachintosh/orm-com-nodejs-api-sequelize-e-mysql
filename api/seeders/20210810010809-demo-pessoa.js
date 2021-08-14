@@ -50,6 +50,30 @@ module.exports = {
 				role: 'docente',
 				createdAt: new Date(),
 				updatedAt: new Date()
+			},
+			{
+				name: 'Paulo Silveira',
+				ativo: true,
+				email: 'paulo.silveira@alura.com',
+				role: 'docente',
+				createdAt: new Date(),
+				updatedAt: new Date()
+			},
+			{
+				name: 'Juliana Amoasei',
+				ativo: true,
+				email: 'juliana.amoasei@alura.com',
+				role: 'docente',
+				createdAt: new Date(),
+				updatedAt: new Date()
+			},
+			{
+				name: 'Guilherme Lima',
+				ativo: true,
+				email: 'gui.lima@alura.com',
+				role: 'docente',
+				createdAt: new Date(),
+				updatedAt: new Date()
 			}
     ], {});
     
