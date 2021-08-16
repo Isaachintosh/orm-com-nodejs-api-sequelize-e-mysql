@@ -3,7 +3,7 @@ const database = require('../models')
 class NivelController {
     static async pegaTodosOsNiveis(req, res){
         try {
-            const todosOsNiveis = await database.todosOsNiveis.findAll()
+            const todosOsNiveis = await database.Niveis.findAll()
             return res.status(200).json(todosOsNiveis)
         } catch(error) {
             res.status(500).json(error.message)
@@ -13,7 +13,7 @@ class NivelController {
     static async pegaUmNivel(req, res){
         const { id } = req.params
         try {
-            const umNivel = await database.todosOsNiveis.findOne({
+            const umNivel = await database.Niveis.findOne({
                 where: {
                     id: Number(id)
                 }
