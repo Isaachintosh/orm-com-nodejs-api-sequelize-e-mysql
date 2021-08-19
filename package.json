@@ -4,6 +4,7 @@
   "description": "Este projeto tem como finalidade aprofundar o conhecimento sobre gerenciamento de conteudos usando o padrão MVC através do Sequelize aplicado a uma API REST em NodeJS",
   "main": "index.js",
   "scripts": {
+    "start": "api/index.js",
     "dev": "nodemon api/index.js",
     "model:create": "npx sequelize-cli model:create",
     "db:migrate": "npx sequelize-cli db:migrate",
