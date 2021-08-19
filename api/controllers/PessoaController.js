@@ -123,8 +123,7 @@ class PessoaController {
         try {
             await database.Matriculas.destroy({
                 where: {
-                    id: Number(matriculaId),
-                    estudante_id: Number(estudanteId)
+                    id: Number(matriculaId)
                 }
             })
             return res.status(200).json({ mensagem: `id ${matriculaId} deletado com sucesso` })
