@@ -12,6 +12,31 @@
     <li>Para criar o seeder da tabela pessoas, use o comando "yarn seed-gen-pessoa"</li>
 </ol>
 
+## Uso de Rotas no Front-End
+
+### Métodos GET:
+
+<ul>
+    <li>
+        /pessoas
+        <p>Esse método realiza uma busca e retorna um array JSON contendo uma lista de todos os usuários cadastrados.</p>
+    </li>
+    <li>
+        /pessoas/:id
+        <p>Esse método realiza uma busca por usuário baseado no seu ID.</p>
+        <p>Recomenda-se o uso desse método com baseando-se no array JSON obtido pelo método anterior ( /pessoas ) para o usuário que estiver consultando escolha o nome do usuário e este aponte para seu ID correspondente.</p>
+        <p>Para implementar esse método inclua os parâmetro "name" do array JSON como dado a ser exibido na tag "datalist". Para requisitar a pesquisa, use o "ID" correspondente ao nome.</p>
+    </li>
+    <li>
+        /pessoas/:estudanteId/matricula/:matriculaId
+        <p>Esse Método pesquisa pelos status de Matrícula, ID de estudante e ID da turma</p>
+        <p>os valores :estudanteId e :matriculaId se referem aos IDs de estudante e maatrícula associados ao usuário, vejamos como podem ser usados:</p>
+        <p>http://www.meusite.com/pessoas/1/matricula/4</p>
+        <p>Para utilizá-lo, execute o mesmo procedimento recomendado no método anterior.</p>
+    </li>
+    <li></li>
+</ul>
+
 ## Sobre o projeto
 <p>O estudo de caso desse projeto se baseia num cliente fictício, uma escola de ensino médio que deseja implementar um sistema de aulas virtuais. Para tal ela apresentou como necessidade organizar o conteúdo pedagógico distribuído de modo organizado dentro do portal que eles mantém online.</p>
 <p>A escola informou que o controle acadêmico precisa ser feito para se aproximar da realidade da secretaria acadêmica.</p>
