@@ -12,9 +12,10 @@
     <li>Para criar o seeder da tabela pessoas, use o comando "yarn seed-gen-pessoa"</li>
 </ol>
 
-## Uso de Rotas no Front-End
+# Uso de Rotas no Front-End
 
-### Métodos GET:
+## Rotas de Usuários
+### Métodos GET para consulta de Usuários:
 
 <ul>
     <li>
@@ -34,7 +35,105 @@
         <p>http://www.meusite.com/pessoas/1/matricula/4</p>
         <p>Para utilizá-lo, execute o mesmo procedimento recomendado no método anterior.</p>
     </li>
-    <li></li>
+</ul>
+
+## Métodos POST para atualizar dados de usuários:
+
+<ul>
+    <li>
+        /pessoas
+        <p>Esse método irá criar um usuário, sendo necessário informar em JSON:</p>
+        <p>"nome": "foo bar",</p>
+        <p>"email": foo@bar.com.br,</p>
+        <p>"ativo": True,</p>
+        <p>"role": "estudante" ou "docente"</p>
+    </li>
+    <li>
+        /pessoas/:estudanteId/matricula
+        <p>Esse método serve para indicar a criação de matrícula para o aluno já cadastrado, sendo necessário indicar no formado JSON o status e o id da turma</p>
+    </li>
+</ul>
+
+# Atenção!
+<p>Os métodos PUT sobrescreverão os dados salvos sobre os usuários, preste bastante atenção ao ID correspondente ao usuário, bem como o ID da matrícula, são dois dados diferentes!</p>
+
+## Métodos PUT para atualizar cadastros:
+
+<ul>
+    <li>/pessoas/:id</li>
+    <li>/pessoas/:estudanteId/matricula/:matriculaId</li>
+</ul>
+
+## Métodos DELETE para deletar Usuários e/ou Matrículas:
+
+<ul>
+    <li>/pessoas/:id</li>
+    <li>/pessoas/:estudanteId/matricula/:matriculaId</li>
+</ul>
+
+## Rotas das Turmas
+
+### Métodos GET
+
+<ul>
+    <li>/turmas</li>
+    <p>Consulta por todas as turmas</p>
+    <li>/turmas/:id</li>
+    <p>Consulta turma por seu id</p>
+</ul>
+
+### Métodos POST
+
+<ul>
+    <li>/turmas</li>
+    <p>Esse método cria uma nova turma e usa como parâmetros os IDs de nível e de docente no corpo da requisição</p>
+</ul>
+
+### Métodos PUT
+
+<ul>
+    <li>/turmas/:id</li>
+    <p>Atualiza turma pelo seu id tendo como parâmetros os ID do docente e ID do nível</p>
+</ul>
+
+### Métodos DELETE
+
+<ul>
+    <li>/turmas/:id</li>
+    <p>Deleta a turma correspondente ao ID</p>
+</ul>
+
+## Rotas dos Niveis
+
+### Métodos GET
+
+<ul>
+    <li>/niveis</li>
+    <p>Consulta por todas os niveis</p>
+    <li>/niveis/:id</li>
+    <p>Consulta o nivel por seu id</p>
+</ul>
+
+### Métodos POST
+
+<ul>
+    <li>/niveis</li>
+    <p>Esse método cria um novo nivel e usa como parâmetro a descrição do nível no corpo da requisição, por exemplo:</p>
+    <p>"descr_nivel": "básico" ou "intermediário" ou "avançado"<p>
+</ul>
+
+### Métodos PUT
+
+<ul>
+    <li>/niveis/:id</li>
+    <p>Atualiza nivel pelo seu id tendo como parâmetro sua nova descrição</p>
+</ul>
+
+### Métodos DELETE
+
+<ul>
+    <li>/niveis/:id</li>
+    <p>Deleta o nivel correspondente ao ID</p>
 </ul>
 
 ## Sobre o projeto
