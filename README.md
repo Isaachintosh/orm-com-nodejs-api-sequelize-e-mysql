@@ -137,7 +137,7 @@
 </ul>
 
 ## Sobre o projeto
-<p>O estudo de caso desse projeto se baseia num cliente fictício, uma escola de ensino médio que deseja implementar um sistema de aulas virtuais. Para tal ela apresentou como necessidade organizar o conteúdo pedagógico distribuído de modo organizado dentro do portal que eles mantém online.</p>
+<p>O estudo de caso desse projeto se baseia num cliente fictício, uma escola de TI que deseja implementar um sistema de aulas virtuais. Para tal ela apresentou como necessidade organizar o conteúdo pedagógico distribuído de modo organizado dentro do portal que eles mantém online.</p>
 <p>A escola informou que o controle acadêmico precisa ser feito para se aproximar da realidade da secretaria acadêmica.</p>
 <p>Deste modo foi informado que o sistema deve ser capaz de:</p>
 <ol>
@@ -152,3 +152,17 @@
     <li>O resultado da busca deve retornar a matrícula e o desempenho acadêmico do aluno, bem como quais aulas ele já assistiu até o momento da pesquisa ter sido feita</li>
 </ol>
 <p>O desenvolvimento desse projeto objetiva a criação de uma API RESTful usando os recursos disponibilizados pelo Sequelize.js para organizar o fluxo de cadastro, consulta, atualização e deleção de dados de um sistema escolar.</p>
+
+## Tecnologias utilizadas
+<ul>
+    <li>Git</li>
+    <li>Node.js</li>
+    <li>Yarn</li>
+    <li>Nodemon</li>
+    <li>Sequelize ORM</li>
+    <li>MySQL & mysql-cli</li>
+    <li>Postman</li>
+    <li>Insomnia</li>
+    <li>Beekeeper</li>
+    <li>Heroku</li>
+</ul>
